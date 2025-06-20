@@ -15,169 +15,152 @@
 
     <!--You are welcome to delete these styles or modify them in your own stylesheet -->
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    /* Global Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-      body {
-        min-height: 100vh;
-        font-family: sans-serif;
-        background-color: #f9fafb;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-      }
-
-
-      
-
-      header{
-        max-width: 600px;
-        width: 100%;
-        padding: 2rem;
-        text-align: center;
-        margin-bottom: 3rem;
-        
-      }
-
-      header h1{
-        font-weight: bold;
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-
-      main{
-        max-width: 600px;
-        width: 100%;
-        padding: 2rem;
-        background-color: #f7f8fa;
-        box-shadow: 0 4px 16px rgba(0, 0, 0 ,0.05);
-        text-align: left;
-        
-      }
-
-      section + section {
-        margin-top: 2rem;
-        border-top: 1px solid #e5e7eb;
-        padding-top: 2rem;
-      }
-
-      section h2 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-        padding-top: 0.98rem;
-      
-      }
-
-      section p,
-      section li{
-        font-size: 0.98rem;
-        color: #374151;
-      }
-
-      section  li {
-        line-height: 1.7rem;
-      }
-
-      section p{
-        margin-bottom: 1.5rem;
-        margin-top: 1.6rem;
-      }
-      
-      section a{
-        text-decoration: none;
-      }
-
-      
-
-      ol, ul{
-        padding-left: 1.25rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      li{
-        margin-bottom: 0.5rem;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-
-      /* Tablet styles: 768px to 1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
   body {
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: sans-serif;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Header */
+  header {
+    max-width: 600px;
+    width: 100%;
     padding: 2rem;
-  }
-
-  main, header {
-    max-width: 720px;
-  }
-
-  header h1 {
-    font-size: 2.2rem;
-  }
-
-  header p {
-    font-size: 1.1rem;
-  }
-
-  section h2 {
-    font-size: 1.2rem;
-  }
-
-  section p,
-  section li {
-    font-size: 1.05rem;
-  }
-}
-
-/* Desktop styles: 1025px and above */
-@media (min-width: 1025px) {
-  body {
-    padding: 4rem;
-  }
-
-  main, header {
-    max-width: 900px;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 
   header h1 {
-    font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   header p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  /* Main Content */
+  main {
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #f7f8fa;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+
+  /* Sections */
+  section + section {
+    margin-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2rem;
   }
 
   section h2 {
-    font-size: 1.4rem;
-  }
-
-  section p,
-  section li {
     font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
   }
-}
 
+  section p {
+    font-size: 0.98rem;
+    color: #374151;
+    margin: 1.6rem 0 1.5rem;
+  }
 
-        
+  section li {
+    font-size: 0.98rem;
+    color: #374151;
+    line-height: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  section a {
+    text-decoration: none;
+  }
+
+  ol, ul {
+    padding-left: 1.25rem;
+    margin: 0.5rem 0;
+  }
+
+  /* Author Info */
+  .author-info {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #374151;
+  }
+
+  .author-info a {
+    text-decoration: none;
+  }
+
+  /* Responsive Styles */
+
+  /* Tablet: 768px to 1024px */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+      padding: 2rem;
+    }
+
+    main, header {
+      max-width: 720px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    header p,
+    section p,
+    section li {
+      font-size: 1.05rem;
+    }
+
+    section h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  /* Desktop: 1025px and above */
+  @media (min-width: 1025px) {
+    body {
+      padding: 4rem;
+    }
+
+    main, header {
+      max-width: 900px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p,
+    section p,
+    section li {
+      font-size: 1.1rem;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+    }
+  }
 
       
     </style>
