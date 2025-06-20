@@ -22,8 +22,87 @@
       }
 
       body {
-        height: 100vh;
-        margin: 50px;
+        min-height: 100vh;
+        font-family: sans-serif;
+        background-color: #f9fafb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+      }
+
+
+      
+
+      header{
+        max-width: 600px;
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        
+      }
+
+      header h1{
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      main{
+        max-width: 600px;
+        width: 100%;
+        padding: 2rem;
+        background-color: #f7f8fa;
+        box-shadow: 0 4px 16px rgba(0, 0, 0 ,0.05);
+        text-align: left;
+        
+      }
+
+      section + section {
+        margin-top: 2rem;
+        border-top: 1px solid #e5e7eb;
+        padding-top: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        padding-top: 0.98rem;
+      
+      }
+
+      section p,
+      section li{
+        font-size: 0.98rem;
+        color: #374151;
+      }
+
+      section  li {
+        line-height: 1.7rem;
+      }
+
+      section p{
+        margin-bottom: 1.5rem;
+        margin-top: 1.6rem;
+      }
+
+      
+
+      ol, ul{
+        padding-left: 1.25rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      li{
+        margin-bottom: 0.5rem;
       }
 
       .author-info {
@@ -39,43 +118,7 @@
     </style>
   </head>
   <body>
-    <!-- 
-    Frequently Asked Questions
-  
-    Browse through the most frequently asked questions
-  
-    How can I track my order?
-  
-    You can track your order using the following steps
-  
-    Go to the Order Tracking page.
-  
-    Enter your order number and email address.
-  
-    Click on the Track Order button to view the current status of your shipment.
-  
-    If you encounter any issues, please visit our Help Center.
-  
-    What is your return policy?
-  
-    We offer a 30-day return policy on most items. Here are some key points
-  
-    Items must be in original condition
-  
-    Unworn, unused, and unwashed.
-  
-    Include original packaging and tags
-  
-    All items should be returned with their original packaging and tags.
-  
-    Proof of purchase
-  
-    A receipt or proof of purchase is required.
-  
-    For more detailed information, read our full Return Policy.
-  
-  -->
-
+    
 
   
   <header>
@@ -85,7 +128,8 @@
 
   <main>
     <section>
-      <h1> How can I track my order?</h1>
+      <h2> How can I track my order?</h2>
+      <p>You can track your order using the following steps:</p>
       <ol>
         <li>Go to the Order Tracking page.</li>
         <li>Enter your order number and email address.</li>
@@ -93,10 +137,10 @@
       </ol>
       <p>If you encounter any issues, please visit our Help Center.</p>
     </section>
-    <hr>
+    
 
     <section>
-      <h1>What is your return policy?</h1>
+      <h2>What is your return policy?</h2>
       <p>We offer a 30-day return policy on most items. Here are some key points</p>
       <ul>
         <li>Items must be in original condition:Unworn, unused, and unwashed.</li>
