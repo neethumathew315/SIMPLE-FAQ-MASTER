@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://simple-faq-master-o1xj-15rhxep5b-neethumathews-projects.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://github.com/neethumathew315/SIMPLE-FAQ-MASTER">
       Solution
     </a>
     <span> | </span>
